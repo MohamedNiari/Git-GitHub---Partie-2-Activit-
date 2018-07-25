@@ -1,0 +1,78 @@
+body
+{
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'antic_didoneregular', arial, serif;
+}
+
+@font-face {
+    font-family: 'antic_didoneregular';
+    src: url('anticdidone-regular-webfont.eot');
+    src: url('anticdidone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('anticdidone-regular-webfont.woff2') format('woff2'),
+         url('anticdidone-regular-webfont.woff') format('woff'),
+         url('anticdidone-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h1
+{
+	text-align: center;
+}
+p
+{
+	font-size: 1.3em;
+}
+
+h2
+{
+	color:teal;
+}
+h1+p
+{
+	text-align: center;
+}
+.A
+{
+	float: right;
+	border: 3px teal double;
+	box-shadow: 6px 6px 10px gray;
+}
+section
+{
+	display:flex;
+}
+nav
+{
+	flex:1;
+	background-image: url(background2.jpg); 
+	margin-top: -100px;
+	height: 500px;
+	border-radius: 5px;
+}
+article
+{
+	flex:2;
+	margin-top: 100px;
+	margin-left: 10px;
+}
+@media all and (max-width: 1024px)
+{
+	body
+	{
+		width: auto;
+	}
+	section
+	{
+		flex-direction: column;
+	}
+	nav
+	{
+		display: none;
+	}
+	article
+	{
+		margin-top: 5px;
+	}
+}
